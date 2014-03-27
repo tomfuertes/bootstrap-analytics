@@ -1,7 +1,14 @@
+/*! bootstrap-analytics - v0.0.1 - 2014-03-27
+* http://www.youtube.com/watch?v=cDuG95DXbw8
+* Copyright (c) 2014 Obi-Wan Kenobi; Licensed  */
 (function ($) {
   'use strict';
 
+  window.ga = function () {
+    console.log(arguments);
+  };
   // https://developers.google.com/analytics/devguides/collection/analyticsjs/events
+
   var $document = $(document);
   var ga = function (e, label) {
     window.ga('send', 'event',
