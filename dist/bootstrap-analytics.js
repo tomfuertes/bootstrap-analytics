@@ -1,4 +1,4 @@
-/*! bootstrap-analytics - v0.0.1 - 2015-09-05
+/*! bootstrap-analytics - v0.0.2 - 2015-09-05
 * https://github.com/tomfuertes/bootstrap-analytics
 * Copyright (c) 2015 Tom Fuertes <tomfuertes@gmail.com>; Licensed WTFPL */
 (function ($) {
