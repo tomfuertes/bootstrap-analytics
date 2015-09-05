@@ -8,6 +8,9 @@
   "author": {
     "name": "Tom Fuertes <tomfuertes@gmail.com>"
   },
+  "scripts": {
+    "test": "grunt hint"
+  },
   "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.5",
