@@ -18,18 +18,26 @@ module.exports = function(grunt) {
         banner: '<%= banner %>',
         stripBanners: true
       },
-      dist: {
+      dist_version: {
         src: ['lib/{,*/}*.js'],
         dest: 'dist/<%= pkg.name %>.v<%= pkg.version %>.js'
+      },
+      dist: {
+        src: ['lib/{,*/}*.js'],
+        dest: 'dist/<%= pkg.name %>.js'
       }
     },
     uglify: {
       options: {
         banner: '<%= banner %>'
       },
+      dist_version: {
+        src: '<%= concat.dist_version.dest %>',
+        dest: 'dist/<%= pkg.name %>.v<%= pkg.version %>.min.js'
+      },
       dist: {
         src: '<%= concat.dist.dest %>',
-        dest: 'dist/<%= pkg.name %>.v<%= pkg.version %>.min.js'
+        dest: 'dist/<%= pkg.name %>.min.js'
       }
     },
     jshint: {
