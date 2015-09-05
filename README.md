@@ -1,6 +1,6 @@
 # bootstrap-analytics
 
-[![Build Status](https://secure.travis-ci.org/tomfuertes/bootstrap-analytics.png?branch=master)](http://travis-ci.org/tomfuertes/bootstrap-analytics)
+[![Circle CI](https://circleci.com/gh/tomfuertes/bootstrap-analytics.svg?style=svg)](https://circleci.com/gh/tomfuertes/bootstrap-analytics)
 
 [![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png)](http://www.wtfpl.net/)
 
