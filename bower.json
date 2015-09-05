@@ -1,10 +1,12 @@
 {
   "name": "bootstrap-analytics",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "main": [
     "dist/bootstrap-analytics.js"
   ],
-  "ignore": ["dist/bootstrap-analytics.v*"],
+  "ignore": [
+    "dist/bootstrap-analytics.v*"
+  ],
   "dependencies": {},
   "devDependencies": {}
 }
