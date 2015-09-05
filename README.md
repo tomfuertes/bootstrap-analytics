@@ -12,5 +12,7 @@ Once installed, you'll fire events into universal analytics based on the bootstr
 
 ## Changlog
 
+* 0.2.0 - fixed recursive publishing issue
+* 0.1.0 - renamespace and added click
 * 0.0.2 - remove debug logging
 * 0.0.1 - initial version
