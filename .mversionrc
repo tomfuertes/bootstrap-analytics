@@ -2,6 +2,6 @@
   "scripts": {
     "preupdate": "echo 'Bumping version'",
     "precommit": "grunt && git add ./dist",
-    "postcommit": "git push && git push --tags && npm publish && bower publish"
+    "postcommit": "git push && git push --tags && npm publish"
   }
 }
