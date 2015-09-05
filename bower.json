@@ -4,7 +4,7 @@
   "main": [
     "dist/bootstrap-analytics.js"
   ],
-  "ignore": [],
+  "ignore": ["dist/bootstrap-analytics.v*"],
   "dependencies": {},
   "devDependencies": {}
 }
