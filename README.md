@@ -8,22 +8,9 @@ Simple Universal Analytics Events tracking for Bootstrap
 
 Once installed, you'll fire events into universal analytics based on the bootstrap events.
 
-### Call for help loading sample GA data!
+![Imgur](https://i.imgur.com/6m7nrOQ.png)
 
-Please go to [http://getbootstrap.com/javascript/]() and paste the following code snippet into your console. Then click and interact with the supported elements:
+## Changlog
 
-  * alert
-  * collapse
-  * dropdown
-  * modal
-  * popover
-  * tab
-  * tooltip
-
-
-```javascript
-$.getScript('http://corsify.appspot.com/' +
-   'https://rawgit.com/tomfuertes/bootstrap-analytics' +
-   '/master/dist/bootstrap-analytics.v0.0.1.js');
-```
-
+* 0.0.2 - remove debug logging
+* 0.0.1 - initial version

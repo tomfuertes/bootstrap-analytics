@@ -1,4 +1,4 @@
-/*! bootstrap-analytics - v0.0.1 - 2015-09-05
+/*! bootstrap-analytics - v0.0.2 - 2015-09-05
 * https://github.com/tomfuertes/bootstrap-analytics
 * Copyright (c) 2015 Tom Fuertes <tomfuertes@gmail.com>; Licensed WTFPL */
 (function ($) {
@@ -6,6 +6,34 @@
 
   // https://developers.google.com/analytics/devguides/collection/analyticsjs/events
   var $document = $(document);
+
+  // TODO: Deprecate in 0.1.0 & Remove in prod if you're reading this...
+  if (window.location.href.indexOf('//getbootstrap.com/' > 0)) {
+    /*jshint ignore:start*/
+    // load universal analytics to Tom's domain
+    // so we can screenshot demo ga data in the README
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    window.ga('create', 'UA-20500285-16', 'getbootstrap.com');
+    window.ga('send', 'pageview');
+    /*jshint ignore:end*/
+
+    // window.ga = function () {
+    //   var args = Array.prototype.slice.call(arguments, 0);
+    //   args.length = 5;
+    //   console.log.apply(console, args);
+    // };
+  }
 
   var ga = function (e, label) {
     window.ga('send', 'event',

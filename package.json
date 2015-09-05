@@ -8,7 +8,8 @@
     "name": "Tom Fuertes <tomfuertes@gmail.com>"
   },
   "scripts": {
-    "test": "grunt hint"
+    "test": "grunt hint",
+    "publish": "mversion patch -m \"Bumped to %s\" -t \"%s\""
   },
   "dependencies": {},
   "devDependencies": {
@@ -19,6 +20,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-mocha-test": "^0.12.7",
     "matchdep": "^0.3.0",
-    "mocha": "^2.3.0"
+    "mocha": "^2.3.0",
+    "mversion": "^1.10.1"
   }
 }

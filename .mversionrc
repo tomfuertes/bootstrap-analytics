@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "preupdate": "echo 'Bumping version'",
+    "precommit": "grunt && git add ./dist"
+  }
+}
