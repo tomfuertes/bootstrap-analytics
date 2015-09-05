@@ -4,7 +4,6 @@
   "repository": "https://github.com/tomfuertes/bootstrap-analytics",
   "homepage": "https://github.com/tomfuertes/bootstrap-analytics",
   "license": "WTFPL",
-  "licenses": ["WTFPL"],
   "author": {
     "name": "Tom Fuertes <tomfuertes@gmail.com>"
   },
