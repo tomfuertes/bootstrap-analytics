@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "grunt hint",
-    "publish": "mversion patch -m \"Bumped to %s\" -t \"%s\""
+    "bump": "mversion patch -m \"Bumped to %s\" -t \"%s\""
   },
   "dependencies": {},
   "devDependencies": {
