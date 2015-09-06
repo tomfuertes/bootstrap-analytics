@@ -12,6 +12,8 @@ Once installed, you'll fire events into universal analytics based on the bootstr
 
 ## Changlog
 
+* 0.3.3 - fx action `.` concatenation
+* 0.3.2 - update tooltip title attribution
 * 0.3.1 - update jshintrc and fx build
 * 0.3.0 - removed v{x.y.z} file pattern in dist
 * 0.2.0 - fixed recursive publishing issue
