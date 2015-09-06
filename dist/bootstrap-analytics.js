@@ -1,4 +1,4 @@
-/*! bootstrap-analytics - v0.3.0 - 2015-09-05
+/*! bootstrap-analytics - v0.3.1 - 2015-09-05
 * https://github.com/tomfuertes/bootstrap-analytics
 * Copyright (c) 2015 Tom Fuertes <tomfuertes@gmail.com>; Licensed WTFPL */
 (function ($) {
@@ -10,7 +10,7 @@
   var ga = function (e, label) {
     window.ga('send', 'event',
       'bootstrap-analytics',
-      [ge.namespace + e.type].join('.'),
+      [e.namespace + e.type].join('.'),
       $.trim(label) || window.location.pathname);
   };
 
@@ -21,7 +21,8 @@
    */
   $document.on('show.bs.modal hide.bs.modal', function (e) {
     var $target = $(e.target);
-    ga(e, $target.find('.modal-title').text() || $target.find('h1, h2, h3, h4, h5').first().text() || $target.attr('id'));
+    ga(e, $target.find('.modal-title').text() ||
+      $target.find('h1, h2, h3, h4, h5').first().text() || $target.attr('id'));
   });
 
   /**
