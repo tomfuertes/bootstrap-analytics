@@ -33,7 +33,9 @@ module.exports = function(grunt) {
       }
     },
     jshint: {
-      options: grunt.file.readJSON('.jshintrc'),
+      options: {
+        jshintrc: true
+      },
       lib_test: {
         src: ['lib/{,*/}*.js']
       }
@@ -51,7 +53,7 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', ['concat', 'uglify']);
+  grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
 
   // Specific tasks
   grunt.registerTask('hint', ['jshint']);

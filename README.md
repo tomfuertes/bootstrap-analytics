@@ -12,6 +12,7 @@ Once installed, you'll fire events into universal analytics based on the bootstr
 
 ## Changlog
 
+* 0.3.1 - update jshintrc and fx build
 * 0.3.0 - removed v{x.y.z} file pattern in dist
 * 0.2.0 - fixed recursive publishing issue
 * 0.1.0 - renamespace and added click
