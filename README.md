@@ -12,6 +12,7 @@ Once installed, you'll fire events into universal analytics based on the bootstr
 
 ## Changlog
 
+* 0.3.4 - add val() to button tracking
 * 0.3.3 - fx action `.` concatenation
 * 0.3.2 - update tooltip title attribution
 * 0.3.1 - update jshintrc and fx build
