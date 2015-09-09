@@ -12,6 +12,7 @@ Once installed, you'll fire events into universal analytics based on the bootstr
 
 ## Changlog
 
+* 0.4.2 - add optTarget to headlines in modals
 * 0.4.1 - add in global window['bootstrap-analytics-label'] as fallback before url
 * 0.4.0 - add in data-bootstrap-analytics for custom labels
 * 0.3.5 - prioritize text() for tooltips
