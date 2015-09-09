@@ -1,4 +1,4 @@
-/*! bootstrap-analytics - v0.3.3 - 2015-09-05
+/*! bootstrap-analytics - v0.3.4 - 2015-09-08
 * https://github.com/tomfuertes/bootstrap-analytics
 * Copyright (c) 2015 Tom Fuertes <tomfuertes@gmail.com>; Licensed WTFPL */
 (function ($) {
@@ -85,7 +85,10 @@
    *  - no events / data toggles?
    */
   $document.on('mousedown', '.btn', function (/*e*/) {
-    ga({namespace: 'bs.btn', type: 'btn-click'}, this.id || $(this).text());
+    ga(
+      {namespace: 'bs.btn', type: 'btn-click'},
+      this.id || $(this).text() || $(this).val()
+    );
   });
 
   /**
