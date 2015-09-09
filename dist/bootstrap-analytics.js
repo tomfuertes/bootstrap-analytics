@@ -1,4 +1,4 @@
-/*! bootstrap-analytics - v0.3.4 - 2015-09-08
+/*! bootstrap-analytics - v0.3.5 - 2015-09-08
 * https://github.com/tomfuertes/bootstrap-analytics
 * Copyright (c) 2015 Tom Fuertes <tomfuertes@gmail.com>; Licensed WTFPL */
 (function ($) {
@@ -57,9 +57,9 @@
   $document.on('show.bs.tooltip', function (e) {
     var $target = $(e.target);
     ga(e,
+      $.trim($(e.target).text()) ||
       $target.attr('title') ||
-      $target.data('original-title') ||
-      $(e.target).text()
+      $target.data('original-title')
     );
   });
 
