@@ -1,4 +1,4 @@
-/*! bootstrap-analytics - v0.4.2 - 2015-09-09
+/*! bootstrap-analytics - v0.4.3 - 2015-09-11
 * https://github.com/tomfuertes/bootstrap-analytics
 * Copyright (c) 2015 Tom Fuertes <tomfuertes@gmail.com>; Licensed WTFPL */
 (function ($) {
@@ -69,11 +69,16 @@
    */
   $document.on('show.bs.tooltip', function (e) {
     var $target = $(e.target);
-    ga(e,
-      $.trim($(e.target).text()) ||
-      $target.attr('title') ||
-      $target.data('original-title')
-    );
+    if (!$target.data('bootstrap-analytics-dedupe')) {
+      $target.data('bootstrap-analytics-dedupe', 'true');
+      ga(e,
+        (
+          $.trim($(e.target).text()) ||
+          $target.attr('title') ||
+          $target.data('original-title')
+        )
+      );
+    }
   });
 
   /**
@@ -90,7 +95,12 @@
    *  - close
    */
   $document.on('close.bs.alert', function (e) {
-    ga(e, $(e.target).find('strong').first().text() || e.target && e.target.id);
+    ga(e,
+      (
+        $(e.target).find('strong').first().text() ||
+        e.target && e.target.id
+      )
+    );
   });
 
   /**
@@ -98,8 +108,7 @@
    *  - no events / data toggles?
    */
   $document.on('mousedown', '.btn', function (/*e*/) {
-    ga(
-      {namespace: 'bs.btn', type: 'btn-click'},
+    ga({namespace: 'bs.btn', type: 'btn-click'},
       this.id || $(this).text() || $(this).val()
     );
   });
