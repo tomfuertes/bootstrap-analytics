@@ -12,6 +12,7 @@ Once installed, you'll fire events into universal analytics based on the bootstr
 
 ## Changlog
 
+* 0.4.4 - don't track anything when window['bootstrap-analytics-label'] === false
 * 0.4.3 - dedupe tooltip / popover
 * 0.4.2 - add optTarget to headlines in modals
 * 0.4.1 - add in global window['bootstrap-analytics-label'] as fallback before url
