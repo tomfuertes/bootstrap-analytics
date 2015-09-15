@@ -1,4 +1,4 @@
-/*! bootstrap-analytics - v0.4.3 - 2015-09-11
+/*! bootstrap-analytics - v0.4.4 - 2015-09-15
 * https://github.com/tomfuertes/bootstrap-analytics
 * Copyright (c) 2015 Tom Fuertes <tomfuertes@gmail.com>; Licensed WTFPL */
 (function ($) {
@@ -8,6 +8,7 @@
   var $document = $(document);
 
   var ga = function (e, label, optTarget) {
+    if (window['bootstrap-analytics-label'] === false) return;
     window.ga('send', 'event',
       'bootstrap-analytics',
       [e.namespace, e.type].join('.'),
